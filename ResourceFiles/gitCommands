@@ -1,0 +1,106 @@
+Git Commands
+~~~~~~~~~~~~
+ 
+  Here, we will update frequently used Git commands. If we create a repository in GitHub without README file and git ignore files then we need to follow the below steps.  
+  Create a repository in GitHub(WebSite) without readme and gitignore files ex: tmpRepo
+ 
+* Create a new repository on the command line
+
+* Syntax:
+
+--------------------------------
+ 1	mkdir tmpRepo
+ 2	cd tmpRepo
+ 3	touch tmp.txt
+ 4	git init
+ 5	git add tmp.txt
+ 6	git commit -m "added empty file tmp.txt"
+	Push an existing repository from the command line
+ 7	git remote add origin https://github.com/RavikrianGoru/tmpRepo.git
+ 8	git push -u origin master
+--------------------------------
+
+* Frequently used git commands
+
+---------------------------------
+ 1	clone git repository from github : copy the https clone link.
+	git clone https://github.com/RavikrianGoru/dev-repo.git
+		
+ 2	check git status
+	git status
+ 
+ 3	stage your changes(files)
+	git add <file or files separated by space)
+ 
+ 4	commit the staged files
+	git commit -m "commit message"
+ 
+ 5	transfer your commits into git account(when you execute the following cmd 1st time it will ask github credentials)
+	git push -u origin master
+	git push origin HEAD:refs/for/master
+ 
+ 6	git log command: it will give all commit logs
+	git log
+ 
+ 7	git commit ammend: updated the latest changes with previous commit
+	git commit --amend
+ 
+ 8	git pull rebase: it is like update the local code from repository
+	git pull --rebase
+	git pull origin master
+ 
+ 9	git checkout file: it will override the local file with remote file. So local changes will be gone.
+	git checkout <file>
+ 
+ 10	Shows diff between files (local) and repo fils.
+ 	git diff 
+	git diff fileName
+ 
+ 11	Checkout code form specific branch and push the code into that branch Ex: branch=1.18
+ 	git branch -v -a
+ 	git checkout release/1.18
+ 	git add <fileName>
+ 	git commit -m "msg"
+ 	git push origin HEAD:refs/for/release/1.8	
+
+ 12	Stash your local code changes, update your code with repo and then apply your local changes.
+  	do some local file changes
+  	git status
+  	git stash save s1
+ 	Saved working directory and index state On master: s1
+ 	git status
+ 	git pull origin master
+ 	git apply s1
+ 	
+ 	or
+ 	
+ 	git stash
+ 	git stash apply
+ 	
+ 13	CMD.....
+ 	............
+ 	............
+ 
+ 
+  	
+---------------------------------
+ 	
+* Other Git commands
+
+---------------------------------
+	git remote
+	git remote -v
+	git branch
+	git branch -v
+	scp -p -P 29418 .....hooks/commit-msg .git/hooks/
+	git reset HEAD <fileName>
+	git log
+	git reset <filename>
+	git reset --hard <commit id>
+	git rm -r <file or dir> remove file or folders
+	git checkout --<filename> undo your changes.
+	git rm --cached <filename>
+	
+	git mergetool <fileName>
+	git cherry-pick --continue
+---------------------------------
