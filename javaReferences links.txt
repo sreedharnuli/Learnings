@@ -1,0 +1,2 @@
+shall copy link :- https://examples.javacodegeeks.com/core-java/class/shallow-copy-example/
+deep copy link :- https://examples.javacodegeeks.com/core-java/class/deep-copy-example-part-2/
