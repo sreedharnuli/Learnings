@@ -1,2 +1,3 @@
 shall copy link :- https://examples.javacodegeeks.com/core-java/class/shallow-copy-example/
 deep copy link :- https://examples.javacodegeeks.com/core-java/class/deep-copy-example-part-2/
+hashmap Implementation :- present at Documents&Pdf folder or http://www.geeksforgeeks.org/internal-working-of-hashmap-java/
