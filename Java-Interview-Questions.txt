@@ -8,7 +8,7 @@ reused for further.
 In string Object(with new) string object is created in heap and when we create other with same value another will be created. Reuseage
 wont be there with string Object.
 
-3)Java memories :- Reff Documents&Pdf section for these concept in detailed.
+Java memories :- Reff Documents&Pdf section for these concept in detailed.
 
 	JVM memory areas / components
 	- Heap area -- contains objects created in program
@@ -28,3 +28,33 @@ Static Variables are stored in Method Area.
 Arrays are stored in heap memory.
 
 Memory pools are created by JVM memory managers during runtime. Memory pool may belong to either heap or non-heap memory.
+
+3) HashSet<String> set = declared;
+set.add(new String("test"));
+set.add(new String("test"));
+will this allows duplicates ?
+A) No, here the size of set is 1 only and duplicate string is not stored and its property is retained. Because the string class overrides
+the equals and hashCode method of the object class.
+Note :- Applicable for all primitive/wrapper classes like Integer, Decemal, .....
+3.1)set.add(new App(1));
+set.add(new App(1));
+will this allows duplicates ?
+A)Yes, because here in App unless we override equals and hashCode method set allows same values as different once by comparing their refference.
+
+4)when to extend Exception and Throwable classes ?
+A)Throwable is a class for all the bad situations, which can arise: Errors & Exceptions.
+
+Error is something, you can't handle at all: OutOfMemoryError, VirtualMachineError, etc.
+
+Exception is for only exceptional cases.
+
+Note :- We should not catch Errors though we catch them there is no use program will terminate. So extending Throwable is meaning less.
+
+There might be situations where you want to catch Throwable to not only catch Exception but also Error but it's rare, people usually don't catch Throwable. But I fail at finding a situation where you'd like to throw a subclass of Throwable.
+
+And I also think that extending Throwable does not make things look less "exception-al", they make it look worse - which totally defeats the intention.
+
+So to conclude, if you really want to throw something, throw a subclass of Exception.
+
+
+
