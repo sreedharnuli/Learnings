@@ -56,5 +56,30 @@ And I also think that extending Throwable does not make things look less "except
 
 So to conclude, if you really want to throw something, throw a subclass of Exception.
 
+5)Difference between Factory and Abstract Factory Design pattern ?
+
+A) 
+Real Life Example. (Easy to remember)
+
+Factory
+
+Imagine you are constructing a house and you approach a carpenter for a door. You give the measurement for the door and your 
+requirements, and he will construct a door for you. In this case, the carpenter is a factory of doors. Your specifications are 
+inputs for the factory, and the door is the output or product from the factory.
+
+Abstract Factory
+
+Now, consider the same example of the door. You can go to a carpenter, or you can go to a plastic door shop or a PVC shop. All 
+of them are door factories. Based on the situation, you decide what kind of factory you need to approach. This is like an Abstract 
+Factory.
 
 
+Note :- Factory DP -- which class in one product , Abstract DP -- which class in which product (Also can say as --> factory of factories).
+
+
+
+Prototype design pattern :- Prototype Pattern says that cloning of an existing object instead of creating new one and can also be customized as per the requirement.
+
+Usage of Prototype Pattern -- When the cost of creating an object is expensive or complicated.
+
+link :- https://javatpoint.com/prototype-design-pattern
