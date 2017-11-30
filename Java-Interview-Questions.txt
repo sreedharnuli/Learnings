@@ -83,3 +83,7 @@ Prototype design pattern :- Prototype Pattern says that cloning of an existing o
 Usage of Prototype Pattern -- When the cost of creating an object is expensive or complicated.
 
 link :- https://javatpoint.com/prototype-design-pattern
+
+6)default size of ArrayList, Vector, HashMap, HashTable ?
+A)Vector - 10, Arraylist - 10, Hashtable - 11, Hashmap - 16, Hashset - 16 
+
